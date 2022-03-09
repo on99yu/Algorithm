@@ -1,8 +1,10 @@
 a,b = map(int, input().split())
 m = int(input())
 
-if a+(m//60) >= 24:
+if b+(m%60) > 60:
+    if b == 60:
+        b = 0
+    else:
+        b = m%60
+else:
     
-    
-    print
-print(a, b)
